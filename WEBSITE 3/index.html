@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eyelash by Lusi</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-ring"></div>
+</div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="logo">𝘌𝘺𝘦𝘭𝘢𝘴𝘩 𝘣𝘺 𝘓𝘶𝘴𝘪</div>
+
+  <div class="menu-toggle" id="menuToggle">☰</div>
+
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#harga">Harga</a>
+    <a href="#galery">Galery</a>
+    <a href="#sosmed">Sosmed</a>
+    <a href="#lokasi">Lokasi</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero reveal">
+  <div class="hero-text">
+
+    <h1 class="typing">𝘌𝘺𝘦𝘭𝘢𝘴𝘩 𝘣𝘺 𝘓𝘶𝘴𝘪 ✨</h1>
+
+    <p class="fade-up delay1">𝙀𝙮𝙚𝙡𝙖𝙨𝙝 𝙚𝙭𝙩𝙚𝙣𝙨𝙞𝙤𝙣𝙨</p>
+    <p class="fade-up delay2">Pekayon Jaya Bekasi Selatan</p>
+    <p class="fade-up delay3">Open Senin - Minggu</p>
+
+    <a href="https://wa.me/6289653423409" class="btn fade-up delay4">
+      Booking Sekarang
+    </a>
+
+  </div>
+
+  <div class="hero-img fade-up delay5">
+    <img src="foto1.jpg">
+  </div>
+</section>
+
+<!-- HARGA -->
+<section id="harga" class="reveal">
+<h2 class="section-title">Harga</h2>
+
+<div class="card-container">
+
+<!-- CARD -->
+<div class="card artis" data-name="Natural Lash" data-price="150K">
+  <div class="glow"></div>
+
+  <img src="foto2.jpg">
+
+  <h3>Natural Lash</h3>
+  <p>Soft & Elegant look</p>
+
+  <div class="info">
+    <span>⏱️ 1.5 Jam</span>
+    <span>⭐ 4.9</span>
+  </div>
+
+  <div class="price">Rp150K</div>
+
+  <button class="card-btn">Booking</button>
+</div>
+
+<div class="card artis" data-name="Volume Lash" data-price="250K">
+  <div class="glow"></div>
+
+  <img src="foto2.jpg">
+
+  <h3>Volume Lash</h3>
+  <p>Bold Glam Look</p>
+
+  <div class="info">
+    <span>⏱️ 2 Jam</span>
+    <span>⭐ 5.0</span>
+  </div>
+
+  <div class="price">Rp250K</div>
+
+  <button class="card-btn">Booking</button>
+</div>
+
+<div class="card artis" data-name="Hybrid Lash" data-price="200K">
+  <div class="glow"></div>
+
+  <img src="foto2.jpg">
+
+  <h3>Hybrid Lash</h3>
+  <p>Best Combination</p>
+
+  <div class="info">
+    <span>⏱️ 1.8 Jam</span>
+    <span>⭐ 4.8</span>
+  </div>
+
+  <div class="price">Rp200K</div>
+
+  <button class="card-btn">Booking</button>
+</div>
+
+</div>
+</section>
+
+<!-- GALERY -->
+<section id="galery" class="reveal">
+<h2 class="section-title">Galery</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+<div class="gallery-item">
+  <img src="foto3.jpg">
+  <div class="overlay">View</div>
+</div>
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <img id="lightbox-img">
+</div>
+
+</section>
+
+<!-- SOSMED -->
+<section id="sosmed" class="reveal">
+<h2 class="section-title">Sosmed</h2>
+
+<div class="sosmed-container">
+
+  <!-- INSTAGRAM -->
+  <a href="https://www.instagram.com/eyelash.bylusy/" target="_blank" class="sosmed-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+    <h3>Instagram</h3>
+    <p>@eyelash.bylusy</p>
+  </a>
+
+  <!-- TIKTOK -->
+  <a href="https://www.tiktok.com/@lusiyna07" target="_blank" class="sosmed-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046126.png">
+    <h3>TikTok</h3>
+    <p>@lusiyna07</p>
+  </a>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/6289653423409" target="_blank" class="sosmed-card">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+    <h3>WhatsApp</h3>
+    <p>Chat Admin</p>
+  </a>
+
+</div>
+</section>
+
+<!-- LOKASI -->
+<section id="lokasi" class="reveal">
+<h2 class="section-title">Lokasi</h2>
+
+<div class="lokasi-container">
+
+  <!-- INFO -->
+  <div class="lokasi-info">
+
+    <h3>📍 Eyelash by Lusi</h3>
+
+    <p class="alamat">
+      Pekayon Jaya, Bekasi Selatan
+    </p>
+
+    <p id="jarak">📏 Menghitung jarak...</p>
+
+    <div class="lokasi-btn">
+      <button onclick="getLocation()" class="btn-map">
+        Arahkan Saya
+      </button>
+
+      <a href="https://wa.me/6289653423409" class="btn-wa">
+        Chat Admin
+      </a>
+    </div>
+
+  </div>
+
+  <!-- MAP -->
+  <div id="map"></div>
+
+</div>
+</section>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/6289653423409" class="wa-float">💬</a>
+
+<footer class="footer">
+
+  <div class="footer-content">
+
+    <h3>Terima Kasih 💖</h3>
+
+    <p>
+      Terima kasih telah mempercayakan kecantikan bulu mata Anda kepada 
+      <b>Eyelash by Lusi</b>.
+    </p>
+
+    <p>
+      Kami selalu berkomitmen memberikan hasil terbaik dengan pelayanan yang nyaman dan berkualitas.
+      Kami tunggu kedatangan Anda kembali ✨
+    </p>
+
+    <a href="https://wa.me/6289653423409" class="footer-btn">
+      Booking Sekarang
+    </a>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Eyelash by Lusi • All Rights Reserved</p>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
